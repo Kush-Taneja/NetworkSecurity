@@ -1,0 +1,8 @@
+{
+  "name": "Network Security Phishing Detector",
+  "description": "Network security machine learning pipeline for phishing detection, batch inference, model evaluation, and dataset drift monitoring.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
