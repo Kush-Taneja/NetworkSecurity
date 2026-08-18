@@ -494,7 +494,7 @@ async function startServer() {
     const distPath = path.resolve(__dirname, 'dist');
     if (fs.existsSync(distPath)) {
       app.use(express.static(distPath));
-      app.get('*', (req, res, next) => {
+      app.use((req: Request, res: Response, next: NextFunction) => {
         if (req.path.startsWith('/api') || req.path === '/train' || req.path === '/predict' || req.path === '/docs') {
           return next();
         }
